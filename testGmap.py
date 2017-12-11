@@ -14,8 +14,7 @@ ADDRESS = "BLOK 5 UKAY BAYU,UKAY HEIGHTS,AMPANG"
 #ADDRESS = "APARTMENT PERMAI PUTERI,TAMAN DATO AHMAD RAZALI,AMPANG"
 #ADDRESS = "APARTMENT MESRA PRIMA,	IKAN EMAS,	TAMAN PANDAN MESRA	,AMPANG"
 #ADDRESS = "AMPANG SAUJANA,AMPANG "
-#api_key ="AIzaSyACO-pqT3xa_GtN5cnpfnLefQJVRfcxWps"
-api_key = "AIzaSyDklUIjINH_eaoiKKgo1M1TLhbDr9B7BdM"
+api_key = ""
 api_response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}'.format(ADDRESS, api_key))
 api_response_dict = api_response.json()
 if api_response_dict['status'] == 'OK':
