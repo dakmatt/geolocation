@@ -54,7 +54,7 @@ try:
 	newAddress.replace(' ','')
 	print 'new address yg dicari' + newAddress
 	try:
-	    api_key = "AIzaSyDklUIjINH_eaoiKKgo1M1TLhbDr9B7BdM" # put your own API KEY , can get from developer
+	    api_key = "" # put your own API KEY , can get from developer
 	    api_response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}'.format(ADDRESS, api_key))
 	    api_response_dict = api_response.json()
 	    if api_response_dict['status'] == 'OK':
